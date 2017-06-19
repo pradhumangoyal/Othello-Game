@@ -13,31 +13,40 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="@android:color/black" />
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/image_black"
+            android:scaleType="fitCenter"/>
 
         <Button
             android:id="@+id/blackCount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/black" />
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/black"
+            android:textSize="25dp"/>
 
-        <Button
+        <ImageButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="@android:color/white" />
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/image_white"
+            android:scaleType="fitCenter" />
 
         <Button
             android:id="@+id/whiteCount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/white" />
+            android:background="@android:color/white"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25dp"
+            />
     </LinearLayout>
 
     <LinearLayout
