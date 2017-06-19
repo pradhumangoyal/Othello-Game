@@ -18,30 +18,22 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
         final Button button = (Button) findViewById(R.id.button);
         final EditText editText = (EditText) findViewById(R.id.editText);
+        final EditText editText1 = (EditText) findViewById(R.id.editText2);
         nameTextView = (TextView) findViewById(R.id.textView);
-        final SharedPreferences sharedPreferences = getSharedPreferences("Othello", MODE_PRIVATE);
-        String name = sharedPreferences.getString("userName", null);
-        if(name == null){
-            nameTextView.setText("Welcome User ");
-        }else{
-            nameTextView.setText("Welcome " + name);
-            editText.setText(name);
-        }
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String name = editText.getText().toString();
-                if(name == null)
+                String name2 = editText1.getText().toString();
+                if (name == null || name2 == null)
                     return;
-                if(name.isEmpty()){
+                if (name.isEmpty() || name2.isEmpty()) {
                     Toast.makeText(StartActivity.this, "Enter name !!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("userName", name);
-                editor.commit();
                 Intent i = new Intent(StartActivity.this, MainActivity.class);
-                i.putExtra("username",name);
+                i.putExtra("player1", name);
+                i.putExtra("player2", name2);
                 startActivity(i);
             }
         });

@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         blackTurn = true;
         b_c = w_c  = 2;
         Intent i = getIntent();
-        String name  = i.getStringExtra("username");
-        Toast.makeText(this,"Welcome "+ name,Toast.LENGTH_SHORT).show();
+        String name = i.getStringExtra("player1");
+        String name2 = i.getStringExtra("player2");
+        Toast.makeText(this, "Welcome " + name + " & " + name2, Toast.LENGTH_SHORT).show();
         mainLayout = (LinearLayout) findViewById(R.id.mainLayout);
         blackCount = (Button) findViewById(R.id.blackCount);
         whiteCount = (Button) findViewById(R.id.whiteCount);

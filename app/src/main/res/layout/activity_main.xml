@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_dark"
+    android:background="#b26827"
     android:orientation="vertical"
     tools:context="com.example.pradhuman.othello.MainActivity">
 
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_light"
+            android:background="#b26827"
             android:id="@+id/image_black"
             android:scaleType="fitCenter"/>
 
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:background="@android:color/holo_green_light"
+            android:background="#b26827"
             android:id="@+id/image_white"
             android:scaleType="fitCenter" />
 

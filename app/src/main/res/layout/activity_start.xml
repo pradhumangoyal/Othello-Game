@@ -19,21 +19,31 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginBottom="11dp"
+        android:hint="Enter Player1"
         android:inputType="textPersonName"
+        android:textSize="18dp" />
+
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:textSize="18dp"
-        android:hint="Enter Username"
-        />
-
-
+        android:layout_marginTop="34dp"
+        android:hint="Enter Player 2:"
+        android:inputType="textPersonName"
+        android:textSize="18dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start game"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
