@@ -34,7 +34,7 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="34dp"
-        android:hint="Enter Player 2:"
+        android:hint="Enter Player 2"
         android:inputType="textPersonName"
         android:textSize="18dp" />
 
