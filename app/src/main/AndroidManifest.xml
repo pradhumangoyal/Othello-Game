@@ -23,5 +23,9 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET">
+        <service
+            android:name=".RSSPullService"
+            android:exported="false"/>
 
 </manifest>
